@@ -26,9 +26,6 @@ $(function () {
 
 
 $(function () {
-    // JavaScript Document
-// Claudio Gomboli . the EGGS LAB
-// 2012 / 8 / 29
 // Responsive animated gallery
 
     $('.portfolio').each(function(index)
@@ -80,6 +77,23 @@ $(function () {
         $(this).addClass("activenav");
     });
 });
+
+
+// $().ready(function(){
+//     $('[rel="tooltip"]').tooltip();
+//
+// });
+//
+// function rotateCard(btn){
+//     var $card = $(btn).closest('.card-container');
+//     console.log($card);
+//     if($card.hasClass('hover')){
+//         $card.removeClass('hover');
+//     } else {
+//         $card.addClass('hover');
+//     }
+// };
+
 
 
 
