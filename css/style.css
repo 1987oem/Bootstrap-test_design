@@ -1,65 +1,16 @@
-/*font-family: "RobotoCondensedRegular"; */
-@import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed');
-
-@import url('https://fonts.googleapis.com/css?family=Arima+Madurai:100,200,300,400,500,700,800,900');
-
-
-@font-face {
-    font-family: "RobotoCondensedRegular";
-    src: url("../fonts/RobotoCondensedRegular/RobotoCondensedRegular.eot");
-    src: url("../fonts/RobotoCondensedRegular/RobotoCondensedRegular.eot?#iefix")format("embedded-opentype"),
-    url("../fonts/RobotoCondensedRegular/RobotoCondensedRegular.woff") format("woff"),
-    url("../fonts/RobotoCondensedRegular/RobotoCondensedRegular.ttf") format("truetype");
-    font-style: normal;
-    font-weight: normal;
-}
-/* font-family: "RobotoCondensedLight"; */
-@font-face {
-    font-family: "RobotoCondensedLight";
-    src: url("../fonts/RobotoCondensedLight/RobotoCondensedLight.eot");
-    src: url("../fonts/RobotoCondensedLight/RobotoCondensedLight.eot?#iefix")format("embedded-opentype"),
-    url("../fonts/RobotoCondensedLight/RobotoCondensedLight.woff") format("woff"),
-    url("../fonts/RobotoCondensedLight/RobotoCondensedLight.ttf") format("truetype");
-    font-style: normal;
-    font-weight: normal;
-}
-/* font-family: "MyriadProRegular"; */
-@font-face {
-    font-family: "MyriadProRegular";
-    src: url("../fonts/MyriadProRegular/MyriadProRegular.eot");
-    src: url("../fonts/MyriadProRegular/MyriadProRegular.eot?#iefix")format("embedded-opentype"),
-    url("../fonts/MyriadProRegular/MyriadProRegular.woff") format("woff"),
-    url("../fonts/MyriadProRegular/MyriadProRegular.ttf") format("truetype");
-    font-style: normal;
-    font-weight: normal;
-}
-
 html {
     overflow-x: hidden;
-    /*font-family: Lato, 'Helvetica Neue', Arial, Helvetica, sans-serif;*/
-    /*position: relative;*/
-    /*min-height: 100%;*/
+    min-height: 100%;
+    min-width: 100%;
 }
-
 img{
-    width:100%;
+    width: 35px;
     height: 100%;
 }
-
 body {
-    /*margin-bottom: 150px;*/
-    font-family: 'Arima Madurai', cursive;
-    /*opacity: 0.9;*/
     -webkit-font-smoothing: antialiased;
     -webkit-overflow-scrolling: touch;
-    /*background-image: url(../img/paint-art-blooms.jpg);*/
-    /*background: #202126;*/
-    background: white;
-    /*background-size: cover;*/
-    /*background-position: center center;*/
-    /*background-repeat: no-repeat;*/
 }
-
 video {
     position: fixed;
     right: 0;
@@ -70,42 +21,34 @@ video {
     height: auto;
     z-index: -100;
     background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
 
-
-a.dropdown-toggle{ font-family: "RobotoCondensedBold";}
-
+.title,
+.submit,
+.lang-panel,
 .line,
-.second,
-.carousel-button,
-.info-box_header {font-family: "RobotoCondensed";}
-
-.copyright p,
-.register_footer,
-.register_text,
-.carousel-box__header { font-family: "RobotoCondensedLight";}
-
+.second {
+    font-family: "Rajdhani";
+}
 
 /*HEADER*/
 .head {
-    margin: 0 0 2% 0;
-    /*opacity: 0.9;*/
+    width: 100%;
+    opacity: 0.9;
     background-color: white;
-     /*background-image: url(../img/paint-splatter.jpg);*/
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    height: 6rem;
-    /*bottom: 10px;*/
+    height: 5rem;
     left: 0;
     right: 0;
-    box-shadow: 0 0 25px 3px #548E7F;
+    box-shadow: 0 0 9px -1.5px #548E7F;
 }
 .logo {
     margin: 5% 0 0 40%;
-    /*width: 100%;*/
     max-width: 35px;
-    /*height: 100%;*/
 }
 .line {
     font-size: 16px;
@@ -117,7 +60,6 @@ a.dropdown-toggle{ font-family: "RobotoCondensedBold";}
     color: black;
     text-align: left;
 }
-
 /*Language block*/
 .lang-panel, a.lang-panel {
     right: 4%;
@@ -128,19 +70,16 @@ a.dropdown-toggle{ font-family: "RobotoCondensedBold";}
     .lang-panel {
         text-align: right;
         top: 25%;
-        /*margin-right: auto;*/
     }
 }
 .lang-block {
     min-width: 5rem;
     background: white;
-
 }
 .dropdown-item:hover {
     background-color: inherit;
     opacity: 0.6;
 }
-
 /*<!--MOBILE Menu "Burger"-->*/
 .animate {
     -webkit-transition: all 0.3s ease-in-out;
@@ -173,7 +112,7 @@ a.dropdown-toggle{ font-family: "RobotoCondensedBold";}
     position: absolute;
     top: 50%;
     right: 50%;
-    margin: -10px -30px 0 0;
+    margin: -15px -30px 0 0;
     width: 30px;
     height: 40px;
     background-repeat: no-repeat;
@@ -243,7 +182,7 @@ a.dropdown-toggle{ font-family: "RobotoCondensedBold";}
 }
 @media (min-width: 320px) {
     .navbar-minimal.open {
-        width: 60px;
+        width: 70px;
     }
     .navbar-minimal.open > .navbar-menu {
         overflow: visible;
@@ -284,90 +223,73 @@ a.dropdown-toggle{ font-family: "RobotoCondensedBold";}
     }
 }
 
-
 /*<!--CAROUSEL-->*/
-
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
-/* Carousel base class */
 .carousel {
-    /*z-index:-1;*/
     border-radius:100px/30px;
-    -webkit-box-shadow:0 0 30px 2px #479F41;
-    -moz-box-shadow:0 0 30px 2px #479F41;
-    box-shadow: 0 0 20px 0px #479F41;
-    margin: 5% 0 5% 0;
+    margin: 5rem 0 3rem 0;
 }
-.carousel:before, .carousel:after{
-    content:"";
-    position:absolute;
-    bottom:1px;top:9px;left:25px;right:50px;
-    z-index:-1;
-    border-radius:100px/30px;
-    -webkit-box-shadow:0 0 30px 2px #479F41;
-    -moz-box-shadow:0 0 30px 2px #479F41;
-    box-shadow: 0 0 30px 2px #479F41;
+.btn {
+    background-color: #2E4B62;
+    box-shadow:  0  1px 2px 1px #2E4B62;
+    outline: none;
+}
+.btn a {
+    color: whitesmoke;
+}
+.btn:hover {
+    background-color: #2E4B62;
+    -webkit-transform: translate(0, 4px);
+    opacity: 1;
+    transition: all .5s ease 0s;
+    box-shadow:  none;
+    cursor: pointer;
+}
+.btn:link, .btn:visited {
+    color: whitesmoke;
+    text-decoration:none;
 }
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
     z-index: 10;
     bottom: 3rem;
 }
+.paragraph, h1, p {
+    color: white;
+}
 /* Declare heights because of positioning of img element */
 .carousel-item {
-    height: 32rem;
-    background-color: #777;
+    height: 38rem;
+
 }
 .carousel-item > img {
     position: absolute;
     top: 0;
     left: 0;
     min-width: 100%;
-    height: 32rem;
 }
+.carousel-inner {
+    opacity: .9;
+}
+.carousel-inner,
 .first-slide,
 .second-slide,
-.third-slide{
-    height: 100vh;
+.third-slide {
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-
 }
 .first-slide {
-    background-image: url(../img/paint-splatter.jpg);
+    background-image: url(../img/olanning_2.jpg);
 }
 .second-slide {
-    background-image: url(../img/slide_4.png);
+    background-image: url(../img/9.jpg);
 }
 .third-slide {
-    background-image: url(../img/slide_1.jpg);}
+    background-image: url(../img/developing.png);
+}
 
-/* MARKETING CONTENT
--------------------------------------------------- */
-/* Center align the text within the three columns below the carousel */
-.marketing .col-lg-4 {
-    margin-bottom: 1.5rem;
-    text-align: center;
-}
-.marketing h2 {
-    font-weight: normal;
-}
-.marketing .col-lg-4 p {
-    margin-right: .75rem;
-    margin-left: .75rem;
-}
-/* Featurettes
-------------------------- */
-.featurette-divider {
-    margin: 5rem 0; /* Space out the Bootstrap <hr> more */
-}
-/* This out the marketing headings */
-.featurette-heading {
-    font-weight: 300;
-    line-height: 1;
-    letter-spacing: -.05rem;
-}
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 @media (min-width: 40em) {
@@ -389,17 +311,6 @@ a.dropdown-toggle{ font-family: "RobotoCondensedBold";}
 }
 
 /*PORTFOLIO BLOCK*/
-a:link, a:visited {
-    color: #333;
-    -webkit-transition: .3s;
-    -moz-transition: .3s;
-    transition: .3s;
-    text-decoration:none;
-}
-a:hover {
-    color: #000;
-    text-decoration:none;
-}
 #allcontent{
     margin:60px auto 0 auto;
     width:100%;
@@ -416,23 +327,17 @@ a:hover {
     position:absolute;
     right:0;
     top:0;
-    -webkit-transition: .2s;
-    -moz-transition: .2s;
-    transition: .2s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    transition: .4s;
     cursor:pointer;
     -webkit-box-shadow:-2px 0 3px rgba(0,0,0,0.3);
     -moz-box-shadow:-2px 0 3px rgba(0,0,0,0.3);
     box-shadow:-2px 0 3px rgba(0,0,0,0.3);
 }
-.portfolio:before, .portfolio:after {
-    content:"";
-    position:absolute;
-    bottom:9px;top:12px;left:50px;right:50px;
-    z-index:-1;
-    border-radius:100px/30px;
-    -webkit-box-shadow:0 0 30px 2px #184D75;
-    -moz-box-shadow:0 0 30px 2px #184D75;
-    box-shadow: 0 0 30px 2px #184D75;
+.portfolio>img {
+    height: 526px;
+    width: 100%;
 }
 .portfolio:nth-child(1) {
     left: 10px;
@@ -495,6 +400,7 @@ a:hover {
     z-index:5;
 }
 .ombra{
+    opacity: .5;
     position:absolute;
     bottom:20px;
     left:10px;
@@ -546,7 +452,6 @@ a:hover {
     -moz-border-radius:20px;
     border-radius:20px;
     padding:7px 10px 0 10px;
-
     -webkit-box-shadow:-2px 0 3px rgba(0,0,0,0.3);
     -moz-box-shadow:-2px 0 3px rgba(0,0,0,0.3);
     box-shadow:-2px 0 3px rgba(0,0,0,0.3);
@@ -619,11 +524,9 @@ a:hover {
     100% { transform: translateY(0); }
 }
 
-/*<!--ID CARD's-->*/
-.btn:hover,
-.btn:focus,
-.btn:active{
-    outline: 0 !important;
+/*ID CARDS*/
+.id-wrap {
+    margin-top: 2rem;
 }
 /* entire container, keeps perspective */
 .card-container {
@@ -641,19 +544,12 @@ a:hover {
     -o-transform: rotateY( 180deg );
     transform: rotateY( 180deg );
 }
-.card-container.static:hover .card,
-.card-container.static.hover .card {
-    -webkit-transform: none;
-    -moz-transform: none;
-    -o-transform: none;
-    transform: none;
-}
 /* flip speed goes here */
 .card {
-    -webkit-transition: -webkit-transform .5s;
-    -moz-transition: -moz-transform .5s;
-    -o-transition: -o-transform .5s;
-    transition: transform .5s;
+    -webkit-transition: -webkit-transform .9s;
+    -moz-transition: -moz-transform .9s;
+    -o-transition: -o-transform .9s;
+    transition: transform .9s;
     -webkit-transform-style: preserve-3d;
     -moz-transform-style: preserve-3d;
     -o-transform-style: preserve-3d;
@@ -669,8 +565,6 @@ a:hover {
     position: absolute;
     top: 0;
     left: 0;
-    background-color: #FFF;
-    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.14);
 }
 /* front pane, placed above back */
 .front {
@@ -684,16 +578,10 @@ a:hover {
     transform: rotateY( 180deg );
     z-index: 3;
 }
-.back .btn-simple{
-    position: absolute;
-    left: 0;
-    bottom: 4px;
-}
 /*        Style       */
 .card{
-    background: none repeat scroll 0 0 #FFFFFF;
+    border: none;
     border-radius: 5px;
-    color: #444444;
 }
 .card-container, .front, .back {
     width: 100%;
@@ -704,7 +592,7 @@ a:hover {
     box-shadow: 0px 0px 19px 0px rgba(0,0,0,0.16);
 }
 .card .cover{
-    height: 105px;
+    height: 110px;
     overflow: hidden;
     border-radius: 4px 4px 0 0;
 }
@@ -720,8 +608,6 @@ a:hover {
     width: 120px;
 }
 .card .user img{
-    /*background: none repeat scroll 0 0 #FFFFFF;*/
-    /*border: 4px solid #FFFFFF;*/
     width: 100%;
 }
 .card .content{
@@ -743,31 +629,21 @@ a:hover {
     text-align: center;
     text-transform: capitalize;
 }
-.card h5{
-    margin: 5px 0;
-    font-weight: 400;
-    line-height: 20px;
-}
 .card .profession{
-    color: #999999;
+    color: #2E4B62;
     text-align: center;
     margin-bottom: 20px;
 }
 .card .footer {
     border-top: 1px solid #EEEEEE;
-    color: #999999;
     margin: 30px 0 0;
-    padding: 10px 0 0;
-    text-align: center;
+    padding: 15px 0 0;
 }
 .card .footer .social-links{
     font-size: 22px;
 }
 .card .footer .social-links a{
     margin: 2px 7px;
-}
-.card .footer .btn-simple{
-    margin-top: -6px;
 }
 .card .header {
     padding: 15px 20px;
@@ -776,8 +652,8 @@ a:hover {
 .card .motto{
     font-family: 'Arima Madurai', cursive;
     border-bottom: 1px solid #EEEEEE;
-    color: #999999;
-    font-size: 14px;
+    color: #2E4B62;
+    font-size: 16px;
     font-weight: 400;
     padding-bottom: 10px;
     text-align: center;
@@ -785,6 +661,9 @@ a:hover {
 .card .stats-container{
     width: 100%;
     margin-top: 50px;
+}
+.card .content h4, p {
+    color: whitesmoke;
 }
 .card .stats{
     display: block;
@@ -802,103 +681,10 @@ a:hover {
     font-family: 'Arima Madurai', cursive;
     font-weight: 300;
     margin-bottom: 5px;
+    color: #2E4B82;
 }
 .card .stats p{
-    color: #777777;
-}
-/*      Just for presentation        */
-.title{
-    color: #506A85;
-    text-align: center;
-    font-weight: 300;
-    font-size: 44px;
-    margin-bottom: 90px;
-    line-height: 90%;
-}
-.title small{
-    font-size: 17px;
-    color: #999;
-    text-transform: uppercase;
-    margin: 0;
-}
-.space-30{
-    height: 30px;
-    display: block;
-}
-.space-50{
-    height: 50px;
-    display: block;
-}
-.space-200{
-    height: 200px;
-    display: block;
-}
-.white-board{
-    background-color: #FFFFFF;
-    min-height: 200px;
-    padding: 60px 60px 20px;
-}
-.ct-heart{
-    color: #F74933;
-}
-pre.prettyprint{
-    background-color: #ffffff;
-    border: 1px solid #999;
-    margin-top: 20px;
-    padding: 20px;
-    text-align: left;
-}
-.atv, .str{
-    color: #05AE0E;
-}
-.tag, .pln, .kwd{
-    color: #3472F7;
-}
-.atn{
-    color: #2C93FF;
-}
-.pln{
-    color: #333;
-}
-.com{
-    color: #999;
-}
-.btn-simple{
-    opacity: .8;
-    color: #666666;
-    background-color: transparent;
-}
-.btn-simple:hover,
-.btn-simple:focus{
-    background-color: transparent;
-    box-shadow: none;
-    opacity: 1;
-}
-.btn-simple i{
-    font-size: 16px;
-}
-.navbar-brand-logo{
-    padding: 0;
-}
-.navbar-brand-logo .logo{
-    border: 1px solid #333333;
-    border-radius: 50%;
-    float: left;
-    overflow: hidden;
-    width: 60px;
-}
-.navbar .navbar-brand-logo .brand{
-    color: #FFFFFF;
-    float: left;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 20px;
-    margin-left: 10px;
-    margin-top: 10px;
-    width: 60px;
-}
-.navbar-default .navbar-brand-logo .brand{
-    color: #555;
+    color: whitesmoke;
 }
 /*       Fix bug for IE      */
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
@@ -926,15 +712,14 @@ pre.prettyprint{
     margin: 0 auto;
     width: 50%;
     text-align: center;
-    padding-bottom: 10px;
-    font-family: Rajdhani;
+    padding-bottom: 1.5rem;
     font-size: 32px;
     color: #2E4B62;
 }
 .registration {
     width: 50%;
     height: 50%;
-    margin: 5% auto 5% auto;
+    margin: 3rem auto 5rem auto;
 }
 @media (max-width: 768px) {
     .registration{
@@ -945,10 +730,6 @@ pre.prettyprint{
     font-family: Rajdhani;
     font-size: 16px;
     color: #2E4B62;
-
-    /*font-size: 16px;*/
-    /*font-family: Helvetica, sans-serif;*/
-    /*color: white;*/
 }
 .form {
     text-align: center;
@@ -956,15 +737,6 @@ pre.prettyprint{
     -moz-animation: bounce 1.5s infinite;
     animation: bounce 1.5s infinite;
 }
-/*.shadow{*/
-    /*box-shadow: 0px 0px 20px 5px #AAA;*/
-    /*opacity: 0.5;*/
-    /*border-radius: 100px;*/
-    /*width: 45%;*/
-    /*margin: 40px auto 0 auto;*/
-    /*padding: 0 10px;*/
-    /*-webkit-animation: shadow 1.5s infinite;*/
-/*}*/
 .field-in {
     display: block;
     margin: 1rem auto;
@@ -979,52 +751,25 @@ pre.prettyprint{
 .reg_name {
     opacity: .4;
     border: .5px solid #2E4B62;
-
-    /*background-color: #2E4B62;*/
-    /*background: url("../img/slide_3.jpg");*/
-    /*background-position: top;*/
-    /*border-bottom: 5px solid #2E4B62;*/
 }
 .reg_name:hover, .email:hover, .message:hover{
-    /*background: url("../img/slide_3.jpg");*/
-    /*background-position: top;*/
     padding: 16px;
-    /*border-bottom: 5px solid #B2175F;*/
     border: .5px solid #2E4B62;
-    /*border-bottom: 4px solid #2E4B62;*/
-
 }
 .reg_name:focus, .email:focus, .message:focus{
     outline: none;
     padding:17px;
+    padding-left: 20px;
     border: 1px solid #2E4B62;
     border-bottom: 5px solid #2E4B62;
 }
 .email {
     opacity: .4;
     border: .5px solid #2E4B62;
-
-
-    /*background: url("../img/slide_3.jpg");*/
-    /*background-position: center;*/
-    /*height: 50px;*/
-    /*background-color: #7239C1;*/
-    /*border-bottom: 5px solid #502789;*/
 }
-/*.email:hover{*/
-    /*background: url("../img/slide_3.jpg");*/
-    /*background-position: center;*/
-    /*padding: 20px;*/
-    /*!*background-color: #2014CB;*!*/
-    /*!*border-bottom: 5px solid #18108E;*!*/
-/*}*/
 .message {
     opacity: .4;
     border: .5px solid #2E4B62;
-
-    /*background: url("../img/slide_3.jpg");*/
-    /*background-position: bottom;*/
-    /*border-bottom: 5px solid #1185C3;*/
     overflow: hidden;
     height: 70px;
 }
@@ -1043,18 +788,14 @@ pre.prettyprint{
     /*border-bottom: 5px solid #2E4B62;*/
 }
 .submit{
-    font-family: Rajdhani;
     font-size: 16px;
     color: whitesmoke;
-    opacity: .9;
     border-radius:5px;
     padding:10px;
     background-color: #2E4B62;
     box-shadow:  0  1px 2px 1px #2E4B62;
-
-    /*background: url("../img/slide_3.jpg");*/
+    margin-top: 2rem;
     border: none;
-    /*border-bottom: 5px solid #CB64B2;*/
     -webkit-transition: all 0.5s ease 0s;
     -moz-transition: all 0.5s ease 0s;
     transition: all 0.5s ease 0s;
@@ -1063,12 +804,7 @@ pre.prettyprint{
     -webkit-transform: translate(0, 4px);
     font-size: 16px;
     opacity: 1;
-    /*width:73px;*/
-    /*transition: all 1.6s ease 0s;*/
-
-    /*opacity: .6;*/
-
-    /*border-bottom: .5px solid #2E4B62;*/
+    transition: all .5s ease 0s;
     box-shadow:  none;
     cursor: pointer;
 }
@@ -1108,46 +844,19 @@ pre.prettyprint{
         transform: translate(0, 8px);
     }
 }
-/*@-webkit-keyframes shadow {*/
-    /*0%{*/
-
-    /*}*/
-    /*50%{*/
-        /*opacity: 0.8;*/
-        /*width: 50%;*/
-    /*}*/
-/*}*/
-/*@-moz-keyframes shadow{*/
-    /*0%{*/
-
-    /*}*/
-    /*50%{*/
-        /*opacity: 0.8;*/
-        /*width: 50%;*/
-    /*}*/
-/*}*/
-/*@keyframes shadow{*/
-    /*0%{*/
-
-    /*}*/
-    /*50%{*/
-        /*opacity: 0.8;*/
-        /*width: 50%;*/
-    /*}*/
-/*}*/
 
 /*FOOTER*/
 .footer-wrap {
-    /*background-image: url(../img/color-splash4.jpg);*/
-    /*background-size: cover;*/
-    /*background-position: center center;*/
-    /*background-repeat: no-repeat;*/
+    opacity: .8;
+    background-color: black;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
     box-shadow: 0 0 9px -1.9px #548E7F;
     width: 100%;
     text-align: center;
-    height: 70px;
-    padding: 1.3rem 0 1rem 0;
-    /*position: absolute;*/
+    height: 5rem;
+    padding: 1.7rem 0 1rem 0;
 }
 .fa-twitter {
     color: #4099FF;
